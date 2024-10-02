@@ -1,8 +1,6 @@
 package com.example.TALLER.PAGO.NOMINA;
 
-import com.example.TALLER.PAGO.NOMINA.MODELO.Empleado;
-import com.example.TALLER.PAGO.NOMINA.MODELO.Sucursal;
-import com.example.TALLER.PAGO.NOMINA.MODELO.Área;
+import com.example.TALLER.PAGO.NOMINA.MODELO.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -102,6 +100,13 @@ public class TallerPagoNominaApplication {
 
 		Área area1 = new Área();
 		Área area2 = new Área(1L, "talento humano", "juan mesa", "piso 3", "300", "401", "medellin", "soft ware de ultima generacion", "manejo de personal", true);
+
+		Nomina nomina1 = new Nomina();
+		Nomina nomina2 = new Nomina(4L, 02, "samuel mazo", "30 dias laborados", 2000000, "150000", "200000 mensual", "sura", false, 0);
+
+		Beneficiario bn1 = new Beneficiario();
+		Beneficiario bn2 = new Beneficiario(6L, "amanda", "mazo", 20, "mamá", "mazo@gmail.com", 301244552, "carrera 56-67-78", "samuel mazo", "masculino");
 	}
+
 
 }
